@@ -3,7 +3,7 @@ from itertools import combinations_with_replacement
 import numpy as np
 from scipy import ndimage as ndi
 
-from .utils import absolute_eigenvaluesh
+from utils.img_utils import absolute_eigenvaluesh
 
 
 def compute_3d_hessian_matrix(nd_array, sigma=1, scale=True, whiteonblack=True):

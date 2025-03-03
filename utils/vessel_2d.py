@@ -3,8 +3,8 @@
 
 import numpy as np
 import copy
-from .utils import divide_nonzero
-from .hessian import absolute_3d_hessian_eigenvalues
+from utils.img_utils import divide_nonzero
+from utils.hessian import absolute_3d_hessian_eigenvalues
 
 def filament_2d_wrapper(struct_img, f2_param):
     bw = np.zeros(struct_img.shape, dtype=bool)
